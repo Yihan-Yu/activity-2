@@ -14,7 +14,7 @@ done in the function `submit_page()`. The `submit_page()` function should:
 * be associated with the URL path `/submit-page`
 * accept both GET and POST requests
 * extract data from the form fields (user_name and user_email) using request.form, when a POST request is received (which typically happens when a form is submitted)
-* render another HTML template named "results.html" and pass the name and email variables to the template
+* render the HTML template named "results.html" and pass the name and email variables to the template
 
 Then in results.html, your task is to write a conditional statement that checks if the length of the name variable is zero (i.e., if it's an empty string). If true, it displays a message saying "An error occurred. Please enter a name."
 If the condition is false (i.e., if the name is not empty), it should show the following message:
